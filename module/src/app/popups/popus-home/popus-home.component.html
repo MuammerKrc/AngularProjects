@@ -1,0 +1,5 @@
+<app-divider [title]="'Popup Çalışması'"></app-divider>
+<button (click)="onClick()">Modal Açma</button>
+<ng-container *ngIf="modalIpen">
+  <app-modal></app-modal>
+</ng-container>

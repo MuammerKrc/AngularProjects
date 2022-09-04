@@ -1,0 +1,28 @@
+<app-divider [title]="'Memnunuiyet Anketi'">
+  <p>NgContent ile geldi</p>
+</app-divider>
+<app-table></app-table>
+<br>
+<app-divider [title]="'Anket'">
+  <p>Ng Content ile geldi</p>
+</app-divider>
+<div class="ui grid">
+  <div class="four wide column">
+    <div class="ui vertical fluid tabular menu">
+      <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="item">
+        Bio
+      </a>
+      <a routerLink="./companies" routerLinkActive="active" class="item">
+        Pics
+      </a>
+      <a routerLink="./partners" routerLinkActive="active" class="item">
+        Companies
+      </a>
+    </div>
+  </div>
+  <div class="twelve wide stretched column">
+    <div class="ui segment">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
